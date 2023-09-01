@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IUBCOMP</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
+    <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+
+    <header class="header">
+       
+        <nav class="tm-nav tm-extended-nav">
+            
+            <ul class="nav-menu">
+                                             
+                    <li class="nav-item">                                
+                        <a href="index.html" class="nav-link current">
+                            <img src="img/logo1.png" alt="Logo" class="tm-brand-icon" style="width: 50px; height: auto; padding-top:20px;">
+                            <span class="logo-text">IUBComp</span>
+                        </a>
+                    </li>
+            
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" style="padding-top:27px;">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="categoryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-top:27px;">
+                        Category
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="categoryDropdown">
+                        <a class="dropdown-item" href="categories.html">Photography</a>
+                        <a class="dropdown-item" href="techfest.php">TechFest</a>
+                        <a class="dropdown-item" href="categories_art.html">Art&Crafts</a>
+                    </div>
+                </li>
+                <!--<li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>-->
+                <li class="nav-item" style="padding-top:18px;">
+                    <a href="contact.php" class="nav-link">Contact</a>
+                </li>
+            
+                <li class="nav-item" style="padding-top:18px;">
+                    <a href="login_form.php" class="nav-link">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    
+<!-- About section -->
+<section id="intro" class="tm-section">
+    <div class="tm-section-col tm-content tm-content-small tm-parallax" data-parallax="scroll" data-image-src="img/iub.webp">
+        <h2 class="tm-text-primary" style="text-align: center;">IUBComp</h2>
+        <p style="text-align: center;">
+            The central hub for all competitions and fests at IUB.
+        </p>
+        <div class="moving-image"></div>
+        <hr class="tm-hr tm-mb-50">
+    </div>
+</section>
+
+
+    <!-- Content -->
+    <main>
+   
+            <!-- Categories -->
+            <div class="tm-section-col tm-parallax" data-parallax="scroll" data-image-src="img/vertex-bg-02.jpg"></div>
+        </div> 
+        
+
+        <div id="gallery" class="tm-content tm-content-small-top">
+            <div class="tm-gallery-container">
+                <h2 class="tm-text-primary tm-text-primary tm-gallery-header">Competition Categories</h2> 
+                <div class="tm-gallery tm-mb-80">
+                    <figure class="effect-goliath tm-gallery-item">
+                        <img src="img/gallery/tn/img-11.jpg" alt="Image"/>
+                        <figcaption>
+                            <h2>Photography</h2>
+                            <p><a href="categories.html">Category</a></p>
+                        </figcaption>			
+                    </figure>
+                    <figure class="effect-goliath tm-gallery-item">
+                        <img src="img/gallery/tn/img-24.jpg" alt="Image"/>
+                        <figcaption>
+                            <h2>Art</h2>
+                            <p><a href="categories_art.html">Category</a></p>
+                        </figcaption>			
+                    </figure>
+                    <figure class="effect-goliath tm-gallery-item">
+                        <img src="img/gallery/tn/img-18.jpg" alt="Image"/>
+                        <figcaption>
+                            <h2>TechFest</h2>
+                            <p><a href="techfest.php">Category</a></p>
+                        </figcaption>			
+                    </figure>
+
+                  
+                </div>
+                
+            </div>
+        </div>
+
+       
+
+        <footer class="footer">
+            &copy; Copyright 2023 IUBCOMP 
+                 
+        </footer>              
+
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js>"></script>
+<script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+</script>
+<script>
+    $(document).ready(function() {
+        // Carousel
+        function slideImages() {
+            $(".carousel-slide").animate({ right: "0%" }, 1000, function() {
+                // After animation, move the first image to the end of the container
+                $(".carousel-slide:last").after($(".carousel-slide:first"));
+                // Reset
+                $(".carousel-slide").css("right", "-100%");
+            });
+        }
+
+        // Call the slideImages function periodically
+        setInterval(slideImages, 2000); 
+    });
+</script>
+
+</body>
+</html>

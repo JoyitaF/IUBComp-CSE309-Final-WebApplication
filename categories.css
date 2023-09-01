@@ -1,0 +1,50 @@
+.category-box{
+    box-sizing: border-box;
+  }
+  
+  #myInput {
+    background-color: #05012f; 
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border-radius: 20px; 
+    color: white; 
+    outline: none; 
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+#myInput:focus {
+    background-color: #090154; 
+    border: 2px solid #e18112; 
+    animation: none; /* Disable animation on focus */
+}
+
+  #myUL {
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+#myUL li a {
+    border-radius: 10px; 
+    border: 1px solid #ccc;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#myUL li a:hover {
+    background-color: orange; 
+    color: #fff; /* Hover text color */
+    transform: scale(1.05); /* Hover scaling effect */
+}
+
