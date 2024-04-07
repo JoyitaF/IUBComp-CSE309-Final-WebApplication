@@ -2,7 +2,7 @@
 
 A prototype competition website for IUB club competitions, aiming to enrich student achievements. Includes photo submission, voting, checking for repeat votes/submissions for the same category, admin/user login and registration, winner announcement table, gallery carousel, and contact form. Uses PHP Backend, Bootstrap framework for HTML Frontend, and MySQL database.
 
-Winning project for the Web Application showcase at the Summer 2023 IUB Tech Fest
+Winning project for the Web Application showcase at the Summer 2023 IUB Tech Fest.
 
 Working demo video: https://drive.google.com/file/d/1M61H4YhE9NtVrWqAlcXK-W7MfqkZDh-K/view?usp=sharing
 
